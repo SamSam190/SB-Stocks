@@ -1,0 +1,301 @@
+.landingPage{
+    height: 270vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+.landing-body{
+    margin-top: 13vh;
+    width: 100%;
+}
+
+.landing-hero{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+
+.landing-hero-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 0% 2% 5% ;
+}
+
+.landing-hero-content h1{
+    font-weight: 700;
+    font-size: 3.8rem;
+    margin: 0;
+    color: var(--text-main);
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.landing-hero-content p{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    color: var(--text-muted);
+}
+
+/* landing - authentication */
+.authentication-form {
+    margin-top: 40px;
+}
+
+.authForm{
+    padding: 30px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+    font-family: 'Inter', sans-serif;
+    
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+}
+
+.authForm h2{
+    margin-bottom: 25px;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.authFormInputs {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.authFormInputs label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.authFormInputs input, .authForm select {
+    width: 100%;
+    height: 45px;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    outline: none;
+    background-color: rgba(15, 23, 42, 0.4);
+    border-radius: 8px;
+    padding: 0 15px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.authFormInputs input:focus, .authForm select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.authForm select option {
+    background-color: #0f172a;
+    color: var(--text-main);
+}
+
+.authForm button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #6366f1 100%);
+    font-weight: 600;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.4);
+}
+
+.authForm button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px -2px rgba(59, 130, 246, 0.5);
+}
+
+.authForm button:active {
+    transform: translateY(0);
+}
+
+.authForm p{
+    margin-top: 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.authForm p span{
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.authForm p span:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+.landing-hero-image{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-hero-image img{
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7);
+    border: 1px solid var(--glass-border);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.landing-about{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    gap: 150px;
+}
+
+.landing-about .about-1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.landing-about .about-1 img{
+    width: 35%;
+    margin-left: 10%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+.landing-about .about-1 .about-1-content{
+    width: 45%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-about .about-1 .about-1-content h3{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.landing-about .about-1 .about-1-content p{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.landing-about .about-1 .about-1-content a,
+.landing-about .about-2 .about-2-content a {
+    font-family: 'Outfit', sans-serif;
+    display: inline-block;
+    width: max-content;
+    padding: 12px 35px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-1));
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.landing-about .about-1 .about-1-content a:hover,
+.landing-about .about-2 .about-2-content a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+.landing-about .about-2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.landing-about .about-2 img{
+    width: 35%;
+    margin-right: 10%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+.landing-about .about-2 .about-2-content{
+    width: 45%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.landing-about .about-2 .about-2-content h3{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.landing-about .about-2 .about-2-content p{
+    font-family: 'Inter', sans-serif;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    background-color: rgba(15, 23, 42, 0.5);
+}
+
+.footer p{
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+}
