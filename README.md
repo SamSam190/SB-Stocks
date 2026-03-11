@@ -57,8 +57,6 @@ To get a local copy up and running, follow these simple steps.
 5. **Trade & Explore!**
    Navigate to [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-## 📸 Demo
-*(Feel free to add your own screenshots of the premium dark mode UI interface here later!)*
 
 ## 📄 Platform Credits
 All rights reserved - © SB-Stocks
